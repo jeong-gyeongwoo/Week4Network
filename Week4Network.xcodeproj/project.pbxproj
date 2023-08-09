@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F4116F312A834661000D08E4 /* BeetListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4116F302A834661000D08E4 /* BeetListTableViewController.swift */; };
+		F4116F402A83E4A6000D08E4 /* BeerListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4116F3F2A83E4A6000D08E4 /* BeerListTableViewCell.swift */; };
 		F452775A2A829062007CF91A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45277592A829062007CF91A /* AppDelegate.swift */; };
 		F452775C2A829062007CF91A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F452775B2A829062007CF91A /* SceneDelegate.swift */; };
 		F452775E2A829062007CF91A /* BeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F452775D2A829062007CF91A /* BeerViewController.swift */; };
@@ -16,10 +18,11 @@
 		F452776F2A829172007CF91A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F452776E2A829172007CF91A /* Alamofire */; };
 		F45277722A8291AA007CF91A /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = F45277712A8291AA007CF91A /* SwiftyJSON */; };
 		F45277752A8291B3007CF91A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F45277742A8291B3007CF91A /* Kingfisher */; };
-		F45277772A82B6EF007CF91A /* BeerListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45277762A82B6EF007CF91A /* BeerListCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F4116F302A834661000D08E4 /* BeetListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeetListTableViewController.swift; sourceTree = "<group>"; };
+		F4116F3F2A83E4A6000D08E4 /* BeerListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListTableViewCell.swift; sourceTree = "<group>"; };
 		F45277562A829062007CF91A /* Week4Network.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week4Network.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F45277592A829062007CF91A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F452775B2A829062007CF91A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,7 +31,6 @@
 		F45277622A829063007CF91A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F45277652A829063007CF91A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F45277672A829063007CF91A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F45277762A82B6EF007CF91A /* BeerListCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListCollectionViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,11 +66,12 @@
 		F45277582A829062007CF91A /* Week4Network */ = {
 			isa = PBXGroup;
 			children = (
-				F45277762A82B6EF007CF91A /* BeerListCollectionViewController.swift */,
 				F45277592A829062007CF91A /* AppDelegate.swift */,
 				F452775B2A829062007CF91A /* SceneDelegate.swift */,
 				F452775D2A829062007CF91A /* BeerViewController.swift */,
 				F452775F2A829062007CF91A /* Main.storyboard */,
+				F4116F302A834661000D08E4 /* BeetListTableViewController.swift */,
+				F4116F3F2A83E4A6000D08E4 /* BeerListTableViewCell.swift */,
 				F45277622A829063007CF91A /* Assets.xcassets */,
 				F45277642A829063007CF91A /* LaunchScreen.storyboard */,
 				F45277672A829063007CF91A /* Info.plist */,
@@ -158,8 +161,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F452775E2A829062007CF91A /* BeerViewController.swift in Sources */,
+				F4116F402A83E4A6000D08E4 /* BeerListTableViewCell.swift in Sources */,
+				F4116F312A834661000D08E4 /* BeetListTableViewController.swift in Sources */,
 				F452775A2A829062007CF91A /* AppDelegate.swift in Sources */,
-				F45277772A82B6EF007CF91A /* BeerListCollectionViewController.swift in Sources */,
 				F452775C2A829062007CF91A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

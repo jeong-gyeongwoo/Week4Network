@@ -80,19 +80,56 @@
         <!--맥주 리스트-->
         <scene sceneID="dCp-vU-cDJ">
             <objects>
-                <tableViewController id="iJ7-Oy-csD" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="2NF-We-vCM">
+                <tableViewController storyboardIdentifier="BeetListTableViewController" id="iJ7-Oy-csD" customClass="BeetListTableViewController" customModule="Week4Network" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="2NF-We-vCM" userLabel="beerListTableView">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="263" id="6A2-gS-dSy">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BeerListTableViewCell" rowHeight="263" id="6A2-gS-dSy" customClass="BeerListTableViewCell" customModule="Week4Network" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="50" width="393" height="263"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6A2-gS-dSy" id="J1Y-PW-lSb">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="263"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="or5-6o-s54">
+                                            <rect key="frame" x="20" y="138" width="28" height="16"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="16" id="R9q-o3-ZsX"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3qr-FJ-zRB">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zux-Ww-gfL">
+                                            <rect key="frame" x="176.66666666666663" y="146.66666666666666" width="196.33333333333337" height="105.33333333333334"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Zux-Ww-gfL" firstAttribute="height" secondItem="J1Y-PW-lSb" secondAttribute="height" multiplier="0.4" id="CKw-ed-DU3"/>
+                                        <constraint firstItem="3qr-FJ-zRB" firstAttribute="leading" secondItem="J1Y-PW-lSb" secondAttribute="leading" id="IoD-7C-VZw"/>
+                                        <constraint firstItem="3qr-FJ-zRB" firstAttribute="height" secondItem="J1Y-PW-lSb" secondAttribute="height" multiplier="0.486692" id="K3X-xu-5fu"/>
+                                        <constraint firstItem="Zux-Ww-gfL" firstAttribute="bottom" secondItem="J1Y-PW-lSb" secondAttribute="bottomMargin" id="SXg-qS-qvw"/>
+                                        <constraint firstItem="3qr-FJ-zRB" firstAttribute="width" secondItem="J1Y-PW-lSb" secondAttribute="width" multiplier="0.610687" id="VsE-So-GYl"/>
+                                        <constraint firstItem="or5-6o-s54" firstAttribute="top" secondItem="3qr-FJ-zRB" secondAttribute="bottom" constant="10" id="XAB-lV-6Cy"/>
+                                        <constraint firstItem="3qr-FJ-zRB" firstAttribute="top" secondItem="J1Y-PW-lSb" secondAttribute="top" id="ZcT-9Y-vMP"/>
+                                        <constraint firstItem="Zux-Ww-gfL" firstAttribute="width" secondItem="J1Y-PW-lSb" secondAttribute="width" multiplier="0.5" id="isU-A9-rgI"/>
+                                        <constraint firstItem="or5-6o-s54" firstAttribute="leading" secondItem="J1Y-PW-lSb" secondAttribute="leadingMargin" id="owP-Oa-Xxf"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Zux-Ww-gfL" secondAttribute="trailing" id="ziG-Ql-AIf"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="beerListDescription" destination="Zux-Ww-gfL" id="4wb-aD-8vc"/>
+                                    <outlet property="beerListImageView" destination="3qr-FJ-zRB" id="Lh3-ii-Hpt"/>
+                                    <outlet property="beerListNameLabel" destination="or5-6o-s54" id="rec-BH-9Yb"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -101,6 +138,9 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="맥주 리스트" id="4dI-IS-lCt"/>
+                    <connections>
+                        <outlet property="beerListTableView" destination="2NF-We-vCM" id="39d-qR-kXg"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H8d-bq-Qz1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -112,6 +152,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="SxT-Oq-AN5" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FhN-FL-Cci">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

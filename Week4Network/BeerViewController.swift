@@ -28,7 +28,7 @@ class BeerViewController: UIViewController {
             switch response.result {
             case .success(let value):
                 let json = JSON(value)
-                print("JSON: \(json)")
+                //print("JSON: \(json)")
                 
                 let imageURL = json[0]["image_url"].stringValue
                 let description = json[0]["description"].stringValue
